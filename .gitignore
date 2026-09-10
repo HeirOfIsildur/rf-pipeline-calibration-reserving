@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Generated outputs, except the deposited summaries cited in the paper
+results/*
+!results/*.csv
+
+# Logs
+*.log
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.synctex.gz
+texput.log
+!results/full25/
+results/full25/*
+!results/full25/*.csv
+!results/cvz/
+results/cvz/*
+!results/cvz/*.csv

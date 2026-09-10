@@ -1,0 +1,21 @@
+[project]
+name = "rf-pipeline-calibration"
+version = "0.1.0"
+description = "Random Forest with Pipeline Calibration for Individual Claims Reserving"
+authors = [{ name = "Jan Janoušek" }, { name = "Michal Pešta" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "joblib>=1.5.3",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "optuna>=4.7.0",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+]
+
+[project.optional-dependencies]
+boosting = ["lightgbm>=4.0"]   # the LightGBM rows of the reproduction run (Section S5)
+nn = ["torch>=2.0"]            # the subnet neural-network reference point (run_gabrielli_nn.py)
